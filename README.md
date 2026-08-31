@@ -92,38 +92,32 @@ Key measures include:
 ```DAX
 Total CO2 Emissions =
 SUM('Energy Emissions'[CO2 Emissions])
+```
 
 ### Total Energy Supply
+
+```DAX
 Total Energy Supply =
 SUM('Energy Emissions'[Energy Supply])
+```
 
+### CO₂ / Energy Ratio
 
-### CO2 by Energy ratio
-
+```DAX
 CO2 by Energy Ratio =
 DIVIDE(
     [Total CO2 Emissions],
     [Total Energy Supply],
     0
 )
+```
 
-### Dashboard Features
+## Dashboard Features
 
 The dashboard allows users to:
 
-Filter analysis by year
-Compare selected countries
-Identify leading CO₂ emitters
-Analyze historical emission trends
-Explore the relationship between energy supply and emissions
-
-
-
-
-
-
-
-
-
-
-
+- Filter analysis by year
+- Compare selected countries
+- Identify leading CO₂ emitters
+- Analyze historical emission trends
+- Explore the relationship between energy supply and emissions
